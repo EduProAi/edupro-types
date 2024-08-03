@@ -1,0 +1,26 @@
+{
+  "name": "@edupro/types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node -r ./registerAlias dist/index.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrytz/edupro-types.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terrytz/edupro-types/issues"
+  },
+  "homepage": "https://github.com/terrytz/edupro-types#readme",
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  },
+  "_moduleAliases": {
+    "@": "dist"
+  }
+}

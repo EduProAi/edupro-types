@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "lib": [
+            "ES2016",
+            "DOM"
+        ],
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "./dist",
+        "strict": true,
+        "allowArbitraryExtensions": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+}
