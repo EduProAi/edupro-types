@@ -1,4 +1,5 @@
 export * from "./models/affiliate-referral.dto";
+export * from "./models/affiliate-referral.entity";
 export * from "./models/ai.dto";
 export * from "./models/client.dto";
 export * from "./models/client.entity";
