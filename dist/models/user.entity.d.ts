@@ -1,6 +1,5 @@
 import { UserRole } from "./role.entity";
 import { UserCashBalance } from "./user-cash.entity";
-import { Subscription } from "./subscription.entity";
 import { UserFeatureQuota } from "./user-feature-quota.entity";
 import { AffiliateReferral } from "./affiliate-referral.entity";
 import { Client } from "./client.entity";
@@ -20,7 +19,6 @@ export type User = {
     email_verified?: boolean;
     internal_note?: string;
     user_cash_balance?: UserCashBalance;
-    subscription?: Subscription;
     user_feature_quota?: UserFeatureQuota[];
     affiliate?: AffiliateReferral[];
     prev_month_commission?: number;

@@ -1,4 +1,3 @@
-import { PricingPlan } from "./pricing-plan.entity";
 import { User } from "./user.entity";
 import { DataPackage } from "./data-package.entity";
 export declare enum OrderStatus {
@@ -24,7 +23,6 @@ export type Order = {
     order_type: order_type;
     amount: number;
     user?: User;
-    pricing_plan?: PricingPlan;
     order_payment?: OrderPayment;
     data_package?: DataPackage;
 };

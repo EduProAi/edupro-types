@@ -1,4 +1,3 @@
-import { PricingPlan } from  "./pricing-plan.entity"
 import { User } from  "./user.entity"
 import { DataPackage } from  "./data-package.entity"
 
@@ -29,7 +28,6 @@ export type Order = {
 
 	// relations
 	user?: User
-	pricing_plan?: PricingPlan
 	order_payment?: OrderPayment
 
 	// extra manual relations
