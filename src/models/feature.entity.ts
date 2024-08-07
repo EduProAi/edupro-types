@@ -5,4 +5,5 @@ export type Feature = {
 	description: string
 	unit?: string
 	resettable?: boolean
+	unit_price?: number
 }
