@@ -36,7 +36,7 @@ export type ClientPassport = {
     expiration_date?: Date | string;
     place_of_issue?: string;
     full_name?: string;
-    country?: number;
+    country?: string;
 };
 export type ClientAddress = {
     id: string;
