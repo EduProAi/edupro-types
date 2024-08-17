@@ -1,80 +1,93 @@
 export type AichatDto = {
-	role: "user" | "assistant" | "system"
-	message: string
-}
+  role: "user" | "assistant" | "system";
+  message: string;
+};
 
 export type CheckPlagiarismDto = {
-	text: string
-}
+  text: string;
+};
 
 export type GeneratePlotsDto = {
-	client_id: string
-	targetSchool: string
-	program: Degrees
-	major: string
-	customInput?: string
-	numPlots: number
-}
+  client_id: string;
+  targetSchool: string;
+  program: Degrees;
+  major: string;
+  customInput?: string;
+  numPlots: number;
+};
 
 export type HumanizeDto = {
-	text: string
-	proficiency: "Intermediate" | "Advanced"
-	temperature?: number
-	model: "v2_0_5" | "v2_0_2"
-}
+  text: string;
+  proficiency: "Intermediate" | "Advanced";
+  temperature?: number;
+  model: "v2_0_5" | "v2_0_2";
+};
 
 export type WriteCvDto = {
-	client_id: string
-	creative?: boolean
-}
+  client_id: string;
+  creative?: boolean;
+};
 
 export type OptimizePlotsDto = {
-	client_id: string
-	plots: string
-	targetSchool: string
-	program: Degrees
-	major: string
-	customInput?: string
-}
+  client_id: string;
+  plots: string;
+  targetSchool: string;
+  program: Degrees;
+  major: string;
+  customInput?: string;
+};
 
 export type WriteEssayDto = {
-	client_id: string
-	plots: string
-	words?: number
-	targetSchool: string
-	program: Degrees
-	major: string
-}
+  client_id: string;
+  plots: string;
+  words?: number;
+  targetSchool: string;
+  program: Degrees;
+  major: string;
+};
 
 export type WriteRecommendationLetterDto = {
-	client_id: string
-	word_count?: number
-	recommender_info: string
-	highlights?: string
-}
+  client_id: string;
+  word_count?: number;
+  recommender_info: string;
+  highlights?: string;
+};
 
 export type WritePromptedEssayDto = {
-	client_id: string
-	prompts: string
-	highlights?: string
-	word_count?: number
-}
+  client_id: string;
+  prompts: string;
+  highlights?: string;
+  word_count?: number;
+};
+
+export type FreeWriteDto = {
+  client_id: string;
+  word_count?: number;
+  style?: string;
+  instructions?: string;
+};
 
 export type WritingTool =
-	| "fix-spelling-grammar"
-	| "lengthen"
-	| "shorten"
-	| "change-tone"
-	| "rephrase"
-	| "change-word-meaning"
-	| "elaborate"
-	| "translate"
-	| "arrange-paragraphs"
+  | "fix-spelling-grammar"
+  | "lengthen"
+  | "shorten"
+  | "change-tone"
+  | "rephrase"
+  | "change-word-meaning"
+  | "elaborate"
+  | "translate"
+  | "arrange-paragraphs";
 
 export type WritingToolsDto = {
-	content: string
-	tool: WritingTool
-	extra?: { [key: string]: string }
-}
+  content: string;
+  tool: WritingTool;
+  extra?: { [key: string]: string };
+};
 
-export type Degrees = "High School" | "Undergraduate" | "Graduate" | "MBA" | "PhD" | undefined
+export type Degrees =
+  | "High School"
+  | "Undergraduate"
+  | "Graduate"
+  | "MBA"
+  | "PhD"
+  | undefined;

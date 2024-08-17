@@ -51,6 +51,12 @@ export type WritePromptedEssayDto = {
     highlights?: string;
     word_count?: number;
 };
+export type FreeWriteDto = {
+    client_id: string;
+    word_count?: number;
+    style?: string;
+    instructions?: string;
+};
 export type WritingTool = "fix-spelling-grammar" | "lengthen" | "shorten" | "change-tone" | "rephrase" | "change-word-meaning" | "elaborate" | "translate" | "arrange-paragraphs";
 export type WritingToolsDto = {
     content: string;
