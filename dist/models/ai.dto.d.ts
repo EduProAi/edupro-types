@@ -57,7 +57,7 @@ export type FreeWriteDto = {
     style?: string;
     instructions?: string;
 };
-export type WritingTool = "fix-spelling-grammar" | "lengthen" | "shorten" | "change-tone" | "rephrase" | "change-word-meaning" | "elaborate" | "translate" | "arrange-paragraphs";
+export type WritingTool = "fix-spelling-grammar" | "lengthen" | "shorten" | "change-tone" | "rephrase" | "change-word-meaning" | "elaborate" | "translate" | "arrange-paragraphs" | "custom-prompt";
 export type WritingToolsDto = {
     content: string;
     tool: WritingTool;

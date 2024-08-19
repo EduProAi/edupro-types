@@ -76,7 +76,8 @@ export type WritingTool =
   | "change-word-meaning"
   | "elaborate"
   | "translate"
-  | "arrange-paragraphs";
+  | "arrange-paragraphs"
+  | "custom-prompt";
 
 export type WritingToolsDto = {
   content: string;
