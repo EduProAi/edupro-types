@@ -44,6 +44,7 @@ export type WriteEssayDto = {
   targetSchool: string;
   program: Degrees;
   major: string;
+  writingStyle?: string;
 };
 
 export type WriteRecommendationLetterDto = {
