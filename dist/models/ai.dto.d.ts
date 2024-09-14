@@ -15,9 +15,9 @@ export type GeneratePlotsDto = {
 };
 export type HumanizeDto = {
     text: string;
-    proficiency: "Intermediate" | "Advanced";
+    proficiency?: "Intermediate" | "Advanced";
     temperature?: number;
-    model: "v2_0_5" | "v2_0_2";
+    model: string;
 };
 export type WriteCvDto = {
     client_id: string;
@@ -38,6 +38,7 @@ export type WriteEssayDto = {
     targetSchool: string;
     program: Degrees;
     major: string;
+    writingStyle?: string;
 };
 export type WriteRecommendationLetterDto = {
     client_id: string;
