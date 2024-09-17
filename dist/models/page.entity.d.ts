@@ -4,6 +4,7 @@ export type Page = {
     content_html: string | null;
     content_text: string | null;
     content_markdown: string | null;
+    content_json: string | null;
     create_time: Date;
     update_time: Date;
     id: string;
